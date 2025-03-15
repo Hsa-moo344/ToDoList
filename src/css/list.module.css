@@ -1,0 +1,147 @@
+/* Reset padding and margin for consistency */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  /* min-height: 100vh; */
+}
+
+/* Main container for the to-do list */
+.listContainer {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.listContainer h1 {
+  margin: auto;
+  display: block;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  right: 300px;
+  bottom: 10px;
+}
+
+/* Add Task Button */
+.TaskBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: rgb(21, 1, 1);
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  position: relative;
+  left: 300px;
+  bottom: 98px;
+}
+
+.TaskBtn:hover {
+  background-color: darkred;
+}
+
+/* Input Fields */
+.ColSub input,
+.ColSub select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: rgb(248, 243, 243);
+  color: black;
+}
+
+/* Table Styling */
+.TaskTbl {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.TaskTbl th,
+.TaskTbl td {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: left;
+}
+
+.TaskTbl th {
+  background: #333;
+  color: white;
+}
+
+/* Buttons in Table */
+.EditBtn,
+.DeleteBtn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+}
+
+.EditBtn {
+  background-color: #4caf50;
+  color: black;
+}
+
+.EditBtn:hover {
+  background-color: #388e3c;
+}
+
+.DeleteBtn {
+  background-color: #f44336;
+  color: black;
+  margin-left: 5px;
+}
+
+.DeleteBtn:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .listContainer {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .TaskBtn {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .ColSub input,
+  .ColSub select {
+    font-size: 12px;
+  }
+
+  .TaskTbl th,
+  .TaskTbl td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .EditBtn,
+  .DeleteBtn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
